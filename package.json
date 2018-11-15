@@ -10,7 +10,8 @@
     "jquery": "^3.3.1",
     "node-sass": "^4.9.3",
     "pug": "^2.0.3",
-    "sass": "^1.14.3"
+    "sass": "^1.14.3",
+    "ws": "^6.1.0"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

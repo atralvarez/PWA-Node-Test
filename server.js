@@ -14,6 +14,9 @@ const bundler = new Bundler(config.file, config.options)
 app.set('trust proxy', true)
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
+
+app.set('port', (process.env.PORT || 5000));
+
 mongoose.set('useFindAndModify', false);
 
 mongoose.connect('mongodb://@ds063929.mlab.com:63929/testapp', {
@@ -51,6 +54,6 @@ app.get("/public/dist/manifest.json", function(req, res){
   });
 
 
-  app.listen(3000, ()=>{
-    console.log("server running @ localhost:3000");
+  app.listen(app.get('port'), ()=>{
+    console.log("server running @ localhost:5000");
 });
