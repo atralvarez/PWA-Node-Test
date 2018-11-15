@@ -54,6 +54,6 @@ app.get("/public/dist/manifest.json", function(req, res){
   });
 
 
-  app.listen(3000, ()=>{
-    console.log("server running @ localhost:5000");
+  app.listen(80, ()=>{
+    console.log("server running @ localhost:80");
 });
