@@ -1,0 +1,39 @@
+extends layout.pug
+
+block menu
+    .header-container
+        span.return-button
+            i.fa.fa-arrow-left
+        img.logo-bbva(src='/public/img/logo.png' alt='BBVA Logo')
+
+block content
+    .row.main-container
+        .interests-container
+            .row
+                .col-6.interest-block(onclick='selectInterest(this)')
+                    .interest-container#food
+                        img(src='/public/img/interests/food.svg' alt='')
+                        div Food
+                .col-6.interest-block(onclick='selectInterest(this)')
+                    .interest-container#shopping
+                        img(src='/public/img/interests/shopping.svg' alt='')
+                        div Shopping
+                .col-6.interest-block(onclick='selectInterest(this)')
+                    .interest-container#sports
+                        img(src='/public/img/interests/sports.svg' alt='')
+                        div Sports
+                .col-6.interest-block(onclick='selectInterest(this)')
+                    .interest-container#museums
+                        img(src='/public/img/interests/museum.svg' alt='')
+                        div Museums
+                .col-6.interest-block(onclick='selectInterest(this)')
+                    .interest-container#spectacles
+                        img(src='/public/img/interests/spectacles.svg' alt='')
+                        div Spectacles
+                .col-6.interest-block(onclick='selectInterest(this)')
+                    .interest-container#wellness
+                        img(src='/public/img/interests/wellness.svg' alt='')
+                        div Wellness
+                .col.action-group.interests-info
+                    div.budget-text.text-center To fully personalize your travel experience, select the most accurate categories of your liking!
+                    button.btn.btn-primary.btn-lg.btn-block(type='button' onclick='window.location.href="/budget"') I'm done!

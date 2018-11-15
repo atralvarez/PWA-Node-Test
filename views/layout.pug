@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=0')
+    title Base App
+    link(rel='stylesheet' type='text/css' href='/public/dist/bundle.css')
+    link(rel='manifest' href='/public/dist/manifest.json')
+  body
+    include navbar
+    .container
+      block menu
+      block content
+    block footer
+      .footer
+        span.text-muted &copy Copyrigth 2018 | Aitor Alvarez
+    block scripts
+      script(src='/public/dist/bundle.js')

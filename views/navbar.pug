@@ -1,0 +1,21 @@
+block nav
+  nav.navbar.navbar-expand-md.navbar-dark
+    a.navbar-brand(href='#') Logo
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsible-nav')
+      span.navbar-toggler-icon
+    div#collapsible-nav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='/login') Home
+        li.nav-item
+          a.nav-link(href='/interests') Interests
+        li.nav-item
+          a.nav-link(href='/budget') Budget
+        li.nav-item.dropdown
+          a#navdrop.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' data-hover='dropdown') Services
+          div.dropdown-menu(aria-labelledby='navdrop')
+            a.dropdown-item(href='/bookingdate') Booking Date
+            a.dropdown-item(href='/returndate') Return Date
+            a.dropdown-item(href='#') Service 3
+        li.nav-item
+          a.nav-link(href='#') Contact us

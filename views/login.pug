@@ -1,0 +1,29 @@
+extends layout.pug
+
+block menu
+    .header-container
+        span.return-button
+            i.fa.fa-left-arrow
+
+block content
+    .row
+        .col-lg-10.col-xl-9.mx-auto.mb-4
+            .card.mt-5.p-5
+                 h4 SIGN IN
+                 p.mt-2 Email
+                 input(type="text" placeholder='email')
+                 p.mt-4 Password
+                 input(type="password" placeholder='password')
+                 button.btn.btn-primary.btn-lg.btn-block.mt-4(type='button' onclick='window.location.href = "/bookingdate"') Sign In
+
+            .card.mt-5.p-5
+                h4 SIGN UP
+                p.mt-2 Username
+                input(type="text" placeholder='user')
+                p.mt-2 Email
+                input(type="text" placeholder='email')
+                p.mt-4 Password
+                input(type="password" placeholder='password')
+                p.mt-2 Repeat password
+                input(type="password" placeholder='repeat password')
+                button.btn.btn-primary.btn-lg.btn-block.mt-4(type='button' onclick='window.location.href = "/bookingdate"') Create account

@@ -1,0 +1,16 @@
+extends layout.pug
+
+block menu
+    .header-container
+        span.return-button
+            i.fa.fa-arrow-left
+        img.logo-bbva(src='/public/img/logo.png' alt='BBVA Logo')
+
+block content
+        .row.main-container
+            .results-top-text.text-center
+                h1.text-showcase What is your budget?
+                img.results-featured-img(src='/public/img/interests/money.svg')
+                div.budget-text Whether you plan a luxury trip or a backpacking tour, a good estimation starts with a realistic budget. Consider flights, transportation accommodation, activities...
+                input.input-btn(type='text' class='form-control form-control-lg' id='budget' placeholder="I can spend up to...")
+                button.btn.btn-primary.btn-lg.btn-block(type='button' onclick='window.location.href = "../results"') Give me the results!
